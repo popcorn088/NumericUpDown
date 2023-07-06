@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "NumericUpDownWPFSample/1.0.0": {
+        "dependencies": {
+          "NumericUpDown": "1.0.0"
+        },
+        "runtime": {
+          "NumericUpDownWPFSample.dll": {}
+        }
+      },
+      "NumericUpDown/1.0.0": {
+        "runtime": {
+          "NumericUpDown.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NumericUpDownWPFSample/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NumericUpDown/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
