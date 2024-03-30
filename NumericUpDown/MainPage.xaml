@@ -11,8 +11,12 @@
     <Page.DataContext>
         <local:MainPageViewModel />
     </Page.DataContext>
+    <Page.Resources>
+        <uc:DecimalToStringConverter x:Key="DecimalToStringConverter"/>
+    </Page.Resources>
 
     <Grid>
+        <!--uc:NumericUpDown Value="{Binding Value, Mode=TwoWay, Converter={StaticResource DecimalToStringConverter}}" /-->
         <uc:NumericUpDown />
     </Grid>
 </Page>

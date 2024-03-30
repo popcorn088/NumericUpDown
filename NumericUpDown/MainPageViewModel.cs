@@ -11,19 +11,19 @@ namespace NumericUpDown
     public class MainPageViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-
-        private NumericUpDownViewModel _numericUpDownViewModel = new NumericUpDownViewModel();
-        public NumericUpDownViewModel NumericUpDownViewModel
+        private decimal _value;
+        public decimal Value
         {
             get
             {
-                return _numericUpDownViewModel;
+                return _value;
             }
             set
             {
-                _numericUpDownViewModel = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(NumericUpDownViewModel)));
+                _value = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Value)));
             }
         }
+
     }
 }

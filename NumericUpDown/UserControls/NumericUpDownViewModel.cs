@@ -4,14 +4,16 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml;
 
 namespace NumericUpDown.UserControls
 {
-    public class NumericUpDownViewModel : INotifyPropertyChanged
+    public class NumericUpDownViewModel : DependencyObject, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-        private double _value;
-        public double Value
+
+        private decimal _value;
+        public decimal Value
         {
             get
             {
